@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $userType = $_POST['userType'];
 
     if ($userType == 'student') {
-        $std = "SELECT * from user where user_id='$ID' and password='$password'";
+        $std = "SELECT * from students where s_id='$ID' and password='$password'";
         $result = mysqli_query($conn, $std);
         if ($result) {
             $num = mysqli_num_rows($result);
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     } 
     elseif ($userType == 'instructor') {
-        $std = "SELECT * from user where user_id='$ID' and password='$password'";
+        $std = "SELECT * from instructors where i_id='$ID' and password='$password'";
         $result = mysqli_query($conn, $std);
         if ($result) {
             $num = mysqli_num_rows($result);
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     } 
     elseif ($userType == 'admin') {
-        $std = "SELECT * from user where user_id='$ID' and password='$password'";
+        $std = "SELECT * from admins where i_id='$ID' and password='$password'";
         $result = mysqli_query($conn, $std);
         if ($result) {
             $num = mysqli_num_rows($result);

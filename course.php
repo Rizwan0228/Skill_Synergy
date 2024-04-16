@@ -47,6 +47,11 @@
                     <li class="nav__item">
                         <a href="submit_assignment.php" class="nav__link">Submit Assignment</a>
                     </li>
+
+                    <li class="nav__item">
+                        <a href="coWisePlo.php" class="nav__link">Details</a>
+                    </li>
+
                 </ul>
             </div>
 

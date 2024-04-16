@@ -64,6 +64,10 @@
           </li>
 
           <li class="nav__item">
+            <a href="notice.php" class="nav__link">Notice Review and Post</a>
+          </li>
+
+          <li class="nav__item">
             <a href="data_view.php" class="nav__link">Data View</a>
           </li>
         </ul>
@@ -95,8 +99,8 @@
         <div class="col-lg-6 mb-3 mb-sm-0">
           <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
             <div class="card-body">
-              <h3 class="card-title">User Entry</h3>
-              <form class="row g-3" action="user_connect.php" method="post">
+              <h3 class="card-title">Student Entry</h3>
+              <form class="row g-3" action="student_connect.php" method="post">
                 <div class="col-md-4">
                   <label for="validationDefault01" class="form-label">User ID: </label>
                   <input type="integer" class="form-control" id="validationDefault01" name="id" required />
@@ -128,25 +132,10 @@
                   </select>
                 </div>
                 <div class="col-md-3">
-                  <label for="validationDefault05" class="form-label">Type of user</label>
-                  <select class="form-select" id="validationDefault04" name="type" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>Student</option>
-                    <option>Instructor</option>
-                    <option>Admin</option>
-                  </select>
-                </div>
-                <div class="col-md-3">
                   <label for="validationDefault06" class="form-label">Password</label>
                   <input type="text" class="form-control" id="validationDefault05" name="password" required />
                 </div>
-                <div class="card-body">
-                
-                <!-- <div class="form-group">
-                  <label for="class">Class</label>
-                  <input type="text" name="class" class="form-control" required>
-                </div> -->
-
+                <div class="card-body">  
                 <div class="col-12" style="margin-top: 42px;">
                   <button class="btn btn-primary" type="submit">
                     Submit form
@@ -155,6 +144,106 @@
               </form>
             </div>
           </div>
+        </div>
+        <div class="row" style="width: 100%; margin: 150px auto 0 auto; justify-content:center;">
+        <div class="col-lg-6 mb-3 mb-sm-0">
+          <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+            <div class="card-body">
+              <h3 class="card-title">Instructor Entry</h3>
+              <form class="row g-3" action="instructor_connect.php" method="post">
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">User ID: </label>
+                  <input type="integer" class="form-control" id="validationDefault01" name="id" required />
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationDefault01" name="f_name" required />
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationDefault02" name="l_name" required />
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefaultUsername" class="form-label">Contact Number</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="contact" required />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationDefault03" class="form-label">Age</label>
+                  <input type="text" class="form-control" id="validationDefault03" name="age" required />
+                </div>
+                <div class="col-md-3">
+                  <label for="validationDefault04" class="form-label">Gender</label>
+                  <select class="form-select" id="validationDefault04" name="gender" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option value="F">Female</option>
+                    <option value="M">Male</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationDefault06" class="form-label">Password</label>
+                  <input type="text" class="form-control" id="validationDefault05" name="password" required />
+                </div>
+                <div class="card-body">  
+                <div class="col-12" style="margin-top: 42px;">
+                  <button class="btn btn-primary" type="submit">
+                    Submit form
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        <div class="row" style="width: 100%; margin: 150px auto 0 auto; justify-content:center;">
+        <div class="col-lg-6 mb-3 mb-sm-0">
+        <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+          <div class="card-body">
+            <h3 class="card-title">Admin Entry</h3>
+            <form class="row g-3" action="admin_connect.php" method="post">
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">User ID: </label>
+                <input type="integer" class="form-control" id="validationDefault01" name="id" required />
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" name="f_name" required />
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" name="l_name" required />
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Contact Number</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="contact" required />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault03" class="form-label">Age</label>
+                <input type="text" class="form-control" id="validationDefault03" name="age" required />
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Gender</label>
+                <select class="form-select" id="validationDefault04" name="gender" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option value="F">Female</option>
+                  <option value="M">Male</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault06" class="form-label">Password</label>
+                <input type="text" class="form-control" id="validationDefault05" name="password" required />
+              </div>
+              <div class="card-body">  
+              <div class="col-12" style="margin-top: 42px;">
+                <button class="btn btn-primary" type="submit">
+                  Submit form
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
         </div>
         <div class="col-lg-6" id="media_1">
           <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
@@ -181,112 +270,11 @@
               </form>
             </div>
           </div>
-        <!-- <div class="col-lg-6" id="media_1">
+        <div class="col-lg-6" id="media_2">
           <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
             <div class="card-body">
               <h3 class="card-title">Notice Board Data Entry</h3>
-              <form class="row g-3" action="officer_notice_board_connect.php" method="post">
-                <div class="col-md-4">
-                  <label for="validationDefault06" class="form-label">Title</label>
-                  <input type="text" class="form-control" id="validationDefault06" name="title" required />
-                </div>
-                <div class="col-md-4">
-                  <label for="validationDefault04" class="form-label">Priority lecvel</label>
-                  <select class="form-select" id="validationDefault04" name="priority_level" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option value="high">High</option>
-                    <option value="mid">Mid</option>
-                    <option value="low">Low</option>
-                  </select>
-                </div>
-
-                <div class="col-md-4">
-                  <label for="validationDefaultUsername" class="form-label">Posted By</label>
-                  <div class="input-group">
-                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="posted_by" placeholder="ID MUST EXIST IN DB" required />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <label for="validationDefault07" class="form-label">Content</label>
-                  <textarea type="text" class="form-control" id="validationDefault07" name="content" required>
-                  </textarea>
-                </div>
-
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">
-                    Submit form
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div> 
-        </div>-->
-      </div>
-    </div>
-
-    <!--<div>
-      <div class="row" style="width: 100%; margin: 100px auto 80px auto; justify-content:center;">
-        <div class="col-lg-6 mb-3 mb-sm-0">
-          <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
-            <div class="card-body">
-              <h3 class="card-title">Project data Entry</h3>
-              <form class="row g-3" action="project_connect.php" method="post" enctype="multipart/form-data">
-                <div class="col-md-8">
-                  <label for="validationDefault06" class="form-label">Project Title</label>
-                  <input type="text" class="form-control" id="validationDefault06" name="project_title" required />
-                </div>
-
-                <div class="col-md-4">
-                  <label for="validationDefaultUsername" class="form-label">Mentor ID</label>
-                  <div class="input-group">
-                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="mentor_id" placeholder="ID MUST EXIST IN DB" required />
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationDefault03" class="form-label">Student 1</label>
-                  <input type="text" class="form-control" id="validationDefault03" name="student_id1" placeholder="ID MUST EXIST IN DB" required />
-                </div>
-                <div class="col-md-3">
-                  <label for="validationDefault03" class="form-label">Student 2</label>
-                  <input type="text" class="form-control" id="validationDefault03" name="student_id2" placeholder="ID MUST EXIST IN DB" />
-                </div>
-                <div class="col-md-3">
-                  <label for="validationDefault03" class="form-label">Student 3</label>
-                  <input type="text" class="form-control" id="validationDefault03" name="student_id3" placeholder="ID MUST EXIST IN DB" />
-                </div>
-                <div class="col-md-3">
-                  <label for="validationDefault03" class="form-label">Student 4</label>
-                  <input type="text" class="form-control" id="validationDefault03" name="student_id4" placeholder="ID MUST EXIST IN DB" />
-                </div>
-                <div class="col-md-4">
-                  <label for="validationDefault04" class="form-label">Status</label>
-                  <select class="form-select" id="validationDefault04" name="status" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option value="Approved">Approved</option>
-                    <option value="pending">Pending</option>
-                    <option value="Reviewed">Reviewed</option>
-                  </select>
-                </div>
-                <div class="col md-4">
-                  <label for="validationDefault04" class="form-label">Upload pdf </label>
-                  <input type="file" class="form-control" name="pdf" id="pdf">
-
-                </div>
-
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit" name="submit">
-                    Submit form
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>-->
-        <!-- <div class="col-lg-6" id="media_2">
-          <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
-            <div class="card-body">
-              <h3 class="card-title">Notice Board Data Request Entry</h3>
-              <form class="row g-3" action="officer_notice_review_connect_1.php" method="post">
+              <form class="row g-3" action="admin_notice_board_connect.php" method="post">
                 <div class="col-md-4">
                   <label for="validationDefault06" class="form-label">Title</label>
                   <input type="text" class="form-control" id="validationDefault06" name="title" required />
@@ -304,7 +292,7 @@
                 <div class="col-md-4">
                   <label for="validationDefaultUsername" class="form-label">Posted By </label>
                   <div class="input-group">
-                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="posted_by" placeholder="ID MUST EXIST IN DB" required />
+                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="posted_by" required />
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -319,18 +307,13 @@
                   </button>
                 </div>
               </form>
-
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </section>
-
-
-
-
-
+  
   <script src="homepage.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

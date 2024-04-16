@@ -99,6 +99,14 @@ $type = $_SESSION['userType'];
                     <li class="nav__item">
                         <a href="submit_assignment.php" class="nav__link">Submit Assignment</a>
                     </li>
+
+                    <li class="nav__item">
+                        <a href="coWisePlo.php" class="nav__link">Details</a>
+                    </li>
+
+                    <!-- <li class="nav__item">
+                        <a href="spiderChartAnalysis.php" target="_self" class="nav__link">Spider Chart Analysis</a>
+                    </li> -->
                 </ul>
             </div>
 
@@ -122,7 +130,7 @@ $type = $_SESSION['userType'];
             <?php
             include 'db.php';
 
-            $sql = "SELECT f_name, l_name, userType FROM user where user_id = '$id'";
+            $sql = "SELECT f_name, l_name, userType FROM students where s_id = '$id'";
 
             $query = mysqli_query($conn, $sql);
 
@@ -138,9 +146,46 @@ $type = $_SESSION['userType'];
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">ID : <?= $id ?></li>
                     <li class="list-group-item">Name : <?= $f_name ?> <?= $l_name ?></li>
-                    <li class="list-group-item">User Type : <?= $type ?></li>
+                    <li class="list-group-item">User Type : <?= $type ?> </li>
                 </ul>
+            </div><div class="card card_1 col-sm-6 mb-3 mb-sm-0">
+            <div class="card-body ">
+                <h1 class="h13">Notice Board</h1>
             </div>
+        </div>
+
+        <?php
+        include 'db.php';
+
+        $sql = "SELECT notice_id, title, content, posted_by, priority_level FROM  notice_board";
+        $query = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($query) > 0) {
+        ?>
+
+            <?php
+            $i = 1;
+            while ($info = mysqli_fetch_array($query)) {
+                $notice_review_id = $info['notice_id'];
+                $title = $info['title'];
+                $content = $info['content'];
+                $posted_by = $info['posted_by'];
+                $pririty_level = $info['priority_level'];
+
+            ?>
+                <div class="card card_1 col-sm-6 mb-3 mb-sm-0">
+                    <h5 class="card-header"><?= $pririty_level ?></h5>
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $title ?></h5>
+                        <p class="card-text"><?= $content ?></p>
+                        <p class="card-text">Posted By ID <?= $posted_by ?></p>
+                    </div>
+                </div>
+        <?php
+            }
+        }
+        ?>
+            
         </div>
     </div>
     </div>

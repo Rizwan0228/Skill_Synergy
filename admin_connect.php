@@ -1,12 +1,11 @@
 <?php
 
-$id = $_POST['id'];
+$id = $_POST['i_id'];
 $f_name = $_POST['f_name'];
 $l_name = $_POST['l_name'];
 $contact = $_POST['contact'];
 $age = $_POST['age'];
 $gender = $_POST['gender'];
-$type = $_POST['type'];
 $password = $_POST['password'];
 // $class = $_POST['class'];
 
@@ -22,8 +21,8 @@ if ($conn->connect_error) {
     echo "$conn->connect_error";
     die("Connection Failed : " . $conn->connect_error);
 } else{
-    $stmt = $conn->prepare("insert into user(user_id, f_name, l_name, contact, password, age, gender, userType) values(?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("issisiss", $id, $f_name, $l_name, $contact, $password, $age, $gender, $type);
+    $stmt = $conn->prepare("insert into admins(i_id, f_name, l_name, contact, password, age, gender) values(?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("issisis", $id, $f_name, $l_name, $contact, $password, $age, $gender);
     $execval = $stmt->execute();
     echo $execval;
     echo "Registration successfully...";

@@ -1,0 +1,245 @@
+/* STD MENU BAR STYLE START */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.std-menu-bar {
+    background-color: rgba(0, 0, 0, .5);
+    color: #669999;
+    text-align: center;
+
+}
+
+.std-menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.std-menu-bar ul li {
+    width: 150px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.std-menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.std-menu-bar ul li:hover {
+    background: #002745;
+    border-radius: 3px;
+}
+
+/* .CLO-PLO-sub-menu{
+    display: none;
+}
+.std-menu-bar ul li:hover .CLO-PLO-sub-menu{
+    display: block;
+    position: absolute;
+    background: #0E3C47;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.std-menu-bar ul li:hover .CLO-PLO-sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.std-menu-bar ul li:hover .CLO-PLO-sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.std-menu-bar ul li:hover .CLO-PLO-sub-menu ul li:last-child{
+    border-bottom: none;
+}
+.std-menu-bar ul li:hover .CLO-PLO-sub-menu ul li a:hover{
+    color: #0AC4EF;
+} */
+.log-out {
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 35px;
+    width: 85px;
+    border-radius: 5px;
+    background-color: #0AC4EF;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.log-out a {
+    text-decoration: none;
+}
+
+.log-out a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* STD MENU BAR STYLE END */
+
+/* USER INFORMATION STYLE START */
+.user-info {
+    height: 80px;
+    width: 250px;
+    background-color: #002745;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.user-id {
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.user-type {
+    padding-left: 40px;
+    padding-top: 5px;
+
+}
+
+/* USER INFORMATION STYLE END */
+
+/* COURSE NAME BUTTON STYLE START */
+
+.course-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.plo {
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #032947;
+    color: white;
+    font-weight: bolder;
+    margin-left: 39px;
+    margin-top: 10px;
+}
+
+.co {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #032947;
+    color: white;
+    font-weight: bolder;
+}
+
+.cse303 {
+    margin-left: 10px;
+    height: 40px;
+    width: 90px;
+    border-radius: 8px;
+    background-color: #032947;
+    color: white;
+    font-weight: bolder;
+}
+
+.cse211 {
+    margin-left: 10px;
+    height: 40px;
+    width: 90px;
+    border-radius: 8px;
+    background-color: #032947;
+    color: white;
+    font-weight: bolder;
+}
+
+.select1{
+    margin-left: 40px;
+    margin-top: 30px;
+    height: 40px;
+    width: 150px;
+    background-color: #032947;
+    color: white;
+    font-weight: bolder;
+}
+
+/* COURSE NAME BUTTON STYLE END */
+
+/* CHART STYLE START */
+
+.chart-container {
+    display: flex;
+}
+
+.chart-container-PLO{
+    width: 800px;
+    height: 400px;
+    margin-top: 5px;
+    margin-left: 450px;
+    margin-bottom: 20px;
+}
+.chart-container-CO{
+    width: 800px;
+    height: 400px;
+    margin-top: 5px;
+    margin-left: 150px;
+    margin-right: 20px;
+}
+
+/* CHART STYLE END */
+
+/* COURSE OUTLINE STYLE START */
+
+.select {
+    padding: 8px, 12px;
+    width: 150px;
+    height: 36px;
+    margin-left: 44.5%;
+    margin-top: 18px;
+    color: black;
+    background-color: #002745;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: white;
+}
+
+/* COURSE OUTLINE STYLE START */
+
+/* GRADE SHEET STYLE START */
+.std-gradesheet{
+    margin-left: 600px;
+    margin-top: 20px;
+    height: 42px;
+    width: 150px;
+    background-color: #032947;
+    color: white;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+/* GRADE SHEET STYLE END */

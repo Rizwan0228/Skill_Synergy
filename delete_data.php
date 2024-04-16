@@ -15,8 +15,12 @@ if ($conn->connect_error) {
     die("Connection Failed : " . $conn->connect_error);
 } else {
 
-    if ($table_name == "user") {
-        $sql = "DELETE FROM $table_name WHERE user_id = $id";
+    if ($table_name == "students") {
+        $sql = "DELETE FROM $table_name WHERE s_id = $id";
+    } elseif ($table_name == "instructors") {
+        $sql = "DELETE FROM $table_name WHERE i_id = $id";
+    } elseif ($table_name == "admins") {
+        $sql = "DELETE FROM $table_name WHERE i_id = $id";
     } elseif ($table_name == "courses") {
         $sql = "DELETE FROM $table_name WHERE course_id = $id";
     } elseif ($table_name == "assignment") {
