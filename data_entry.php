@@ -146,7 +146,7 @@
           </div>
         </div>
         <div class="row" style="width: 100%; margin: 150px auto 0 auto; justify-content:center;">
-        <div class="col-lg-6 mb-3 mb-sm-0">
+        <div class="col-lg-50 mb-3 mb-sm-0">
           <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
             <div class="card-body">
               <h3 class="card-title">Instructor Entry</h3>
@@ -196,7 +196,7 @@
           </div>
           </div>
         <div class="row" style="width: 100%; margin: 150px auto 0 auto; justify-content:center;">
-        <div class="col-lg-6 mb-3 mb-sm-0">
+        <div class="col-lg-50 mb-300 mb-sm-10">
         <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
           <div class="card-body">
             <h3 class="card-title">Admin Entry</h3>
@@ -245,7 +245,7 @@
           </div>
         </div>
         </div>
-        <div class="col-lg-6" id="media_1">
+        <div class="col-lg-10 mb-3 mb-sm-0" id="media_1">
           <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
             <div class="card-body">
               <h3 class="card-title">Course Entry</h3>
@@ -270,7 +270,7 @@
               </form>
             </div>
           </div>
-        <div class="col-lg-6" id="media_2">
+        <div class="col-lg-20 mb-100 mb-sm-50" id="media_2">
           <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
             <div class="card-body">
               <h3 class="card-title">Notice Board Data Entry</h3>
